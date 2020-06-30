@@ -1,0 +1,40 @@
+body{
+	background: grey;
+}
+.row {
+  margin-bottom: 15px;
+}
+.row > div {
+  border: 0;
+  font-size: 30px;
+  color: white;
+}
+.container-fluid{
+	background: black;
+	height: 40px;
+	/*opacity: 50%;*/
+}
+#apss{
+	margin-top: -10px;
+	align-self: center;
+}
+.navibar{
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 2px;
+}
+.amazonlink{
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: 2px;
+	text-align: left;
+
+}
+a.amazonlink:hover{
+	border-right: 2px;
+}
+.image{
+	margin-left: 20px;
+	width:50px;
+}
