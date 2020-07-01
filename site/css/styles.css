@@ -94,10 +94,28 @@ select.dropdown:hover{
 	}
 }
 @media (max-width: 575){
+	#main{
+		overflow: visible;
+		height: 130px;
+	}
 	.amazonlogo{
+		margin-left: 50px;
+		margin-top: -78px;
+		width: 120px;
+		/*padding-left: 100px;*/
 		padding-right: 5px;
 		/*margin-left: -30px;*/
-		margin-right: 80%;
+		margin-right: 70%;
+	}
+	input#displayValue{
+		width: 87%;
+		border-style: solid;
+		border-color: black;
+		margin-top: -8px;
+		margin-right: 10px;
+	}
+	a.navbuttonlink{
+		width: 50px;
 	}
 }
 #displayValue{
