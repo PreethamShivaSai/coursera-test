@@ -1,43 +1,3 @@
-/*body{
-	background: grey;
-}
-.row {
-  margin-bottom: 15px;
-}
-.row > div {
-  border: 0;
-  font-size: 30px;
-  color: white;
-}
-.container-fluid{
-	background: black;
-	height: 40px;
-	/*opacity: 50%;*/
-/*}
-#apss{
-	margin-top: -10px;
-	align-self: center;
-}
-.navibar{
-	text-align: center;
-	padding-right: 10px;
-	padding-left: 10px;
-	border: 2px;
-}
-.amazonlink{
-	padding-left: 10px;
-	padding-right: 10px;
-	border-left: 2px;
-	text-align: left;
-
-}
-a.amazonlink:hover{
-	border-right: 2px;
-}
-.image{
-	margin-left: 20px;
-	width:50px;
-}*/
 body{
 	background: grey;
 }
@@ -46,7 +6,7 @@ body{
 	background: black;
 	overflow: hidden;
 }
-.navbutton{
+#navbutton{
 	border: auto;
 	font-size: 35px;
 	padding-left: 10px;
@@ -90,16 +50,59 @@ img.amazonlogo:hover{
 	height: 40px;
 	cursor: pointer;
 	opacity: 100%;
+	background: lightgrey;
+	border-radius: 1px;
 }
 select.dropdown:hover{
 	opacity: 80%;
 }
-@media (max-width: 989px){
-	#displayValue{
-		width:200px; 
+/*med screen*/
+@media (max-width: 991px){
+	#main{
+		height: 110px;
+	}
+	.navbuttonlink{
+		margin-right: 5%;
+	}
+	.dropdown{
+		width: 5%;
+		height: 36px;
+		margin-top: 15px;
+		margin-left: 10px;
+	}
+	.amazonlogo{
+		padding-right: 5px;
+		margin-left: 1.8%;
+		margin-right: 70%;
+	}
+	input#displayValue{
+		width: 90%;
+		/*width: 880px;*/
+		border-style: solid;
+		border-color: black;
+		margin-top: 8px;
+		/*margin-left: 2px;*/
+		margin-right: 10px;
+	}
+	
+}
+@media (max-width: 768px){
+	.amazonlogo{
+		padding-right: 5px;
+		margin-left: -27px;
+		/*margin-right: 70%;*/
 	}
 }
-
+@media (max-width: 575){
+	body{
+		background: red;
+	}
+	.amazonlogo{
+		padding-right: 5px;
+		/*margin-left: -30px;*/
+		margin-right: 80%;
+	}
+}
 #displayValue{
 	width: 55em;
 	height: 40px;
