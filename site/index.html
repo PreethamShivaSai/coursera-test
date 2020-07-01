@@ -14,14 +14,30 @@
       <div id="c" class="col-md-4 col-sm-6 col-xs-6"><a href="https://www.amazon.in/" style="text-decoration: none; color: white;" target="_blank">=</a></div>
       <div id="apss" class="col-md-4 col-sm-6" ><a style="text-decoration: none" href="index.html"></a><img width="150" height="65" src="ama.png"></div>
     </div> -->
-    <div class="container-fluid">
+   <!--  <div class="container-fluid">
     	<div class="row">
     			<div class="navibar" >
     				<a href="https://www.amazon.in/" class="amazonlink" target="_blank" style="text-decoration: none; color: white; border:2px; border-color: white;">=</a>
     			<span class="imagespan"><a id="homepage" href="index.html"><img class="image" src="main.png"></a></span>
     			</div>
     	</div>
-    </div>
+    </div> -->
+    <section id="main">
+    	<span class="navbutton"><a class="navbuttonlink" style="text-decoration: none; color: white;" href="https://www.amazon.in/">=</a></span>
+    	<span><a href="index.html"><img  class="amazonlogo" src="main.png"></a></span>
+    	<span class="tfd"><select class="dropdown" 
+          onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+	    <option></option>
+	    <option value="All" selected="">All</option>
+	    <option value="Mobiles">Mobiles</option>
+	    <option value="Books">Books</option>
+	    <option value="Mobile protection">Mobile protection</option>
+	    <option value="Clothing">Clothing</option>
+	  </select>
+	  <input type="text" name="displayValue" id="displayValue" 
+	         placeholder="add/select a value" onfocus="this.select()"  >
+	  <input name="idValue" id="idValue" type="hidden"></span>
+    </section>
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
