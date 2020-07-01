@@ -94,9 +94,6 @@ select.dropdown:hover{
 	}
 }
 @media (max-width: 575){
-	body{
-		background: red;
-	}
 	.amazonlogo{
 		padding-right: 5px;
 		/*margin-left: -30px;*/
