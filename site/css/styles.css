@@ -1,4 +1,4 @@
-body{
+/*body{
 	background: grey;
 }
 .row {
@@ -13,7 +13,7 @@ body{
 	background: black;
 	height: 40px;
 	/*opacity: 50%;*/
-}
+/*}
 #apss{
 	margin-top: -10px;
 	align-self: center;
@@ -37,4 +37,70 @@ a.amazonlink:hover{
 .image{
 	margin-left: 20px;
 	width:50px;
+}*/
+body{
+	background: grey;
+}
+#main{
+	height:60px;
+	background: black;
+	overflow: hidden;
+}
+.navbutton{
+	border: auto;
+	font-size: 35px;
+	padding-left: 10px;
+}
+.amazonlogo{
+	margin-top: -25px;
+	margin-bottom: -19px;
+	padding-right: 15px; 
+	padding-left: 5px;
+	padding-bottom: 3px;
+	padding-top: 15px;
+	width: 120px;
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+}
+.navbuttonlink{
+	position: relative;
+	top:5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 7px;
+	padding-left: 7px;
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+	/*border: auto;*/
+}
+a.navbuttonlink:hover{
+	/*padding: auto;*/
+	/*border: 1px;*/
+	/*border-style: solid;*/
+	border-color: white;
+}
+img.amazonlogo:hover{
+	border-color: white;
+}
+.dropdown{
+	margin-right:-3px; 
+	width: 43px;
+	height: 40px;
+	cursor: pointer;
+	opacity: 100%;
+}
+select.dropdown:hover{
+	opacity: 80%;
+}
+@media (max-width: 989px){
+	#displayValue{
+		width:200px; 
+	}
+}
+
+#displayValue{
+	width: 55em;
+	height: 40px;
 }
