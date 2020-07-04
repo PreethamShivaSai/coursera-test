@@ -87,7 +87,7 @@
   .col-md-10 {
     width: 83%;
   }
-  .col-mod-105{
+  .col-md-105{
     width: 87.5%
   }
   .col-md-11 {
@@ -97,6 +97,7 @@
     width: 100%;
   }
 }
+/*small width devices*/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-sm-0, .col-sm-05, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-105, .col-sm-11, .col-sm-12 {
     float: left;
@@ -138,13 +139,65 @@
   .col-sm-10 {
     width: 83%;
   }
-  .cosmsm-105{
+  .cos-sm-105{
     width: 87.5%
   }
   .col-sm-11 {
     width: 91%;
   }
   .col-sm-12 {
+    width: 100%;
+  }
+}
+/* extra small devices*/
+@media (min-width: 0px) and (max-width: 767px) {
+  .col-xs-0, .col-xs-05, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-105, .col-xs-11, .col-xs-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-xs-0{
+    width: 0%;
+  }
+  .col-xs-05{
+    width: 4%;
+  }
+  .col-xs-1 {
+    width: 8%;
+  }
+  .col-xs-2 {
+    width: 16%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33%;
+  }
+  .col-xs-5 {
+    width: 41%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58%;
+  }
+  .col-xs-8 {
+    width: 66%;
+  }
+  .col-xs-9 {
+    width: 74%;
+  }
+  .col-xs-10 {
+    width: 83%;
+  }
+  .col-xs-105{
+    width: 87.5%
+  }
+  .col-xs-11 {
+    width: 91%;
+  }
+  .col-xs-12 {
     width: 100%;
   }
 }
@@ -320,5 +373,38 @@
   #navbar{
     padding-left: 0.7%;
     padding-right: 0px;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px){
+  .row{
+    height: 125px;
+  }
+  #navbar{
+    padding-left: 3px;
+  }
+  .signin{
+    position: relative;
+    top: 2px;
+    border: 0px;
+  }
+  #sbutton:hover{
+    border: 0px;
+  }
+  .orders:hover{
+    border: 0px;
+  }
+  .amazonlogo{
+    width: 100%;
+  }
+  #amazonborder{
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    top: 10px;
+  }
+  #amazonborder:hover{
+    border: 0px;
+  }
+  #navbar{
+    border: 0px;
   }
 }
