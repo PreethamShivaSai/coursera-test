@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apss</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+    <section id="main">
+    	<span id="navbutton"><a class="navbuttonlink" style="text-decoration: none; color: white;" href="https://www.amazon.in/">=</a></span>
+    	<span><a href="index.html"><img  class="amazonlogo" src="main.png"></a></span>
+    	<!-- <br class="col-xs-12"> -->
+    	<span class="tfd"><select class="dropdown" 
+          onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+	    <option></option>
+	    <option value="All" selected="">All</option>
+	    <option value="Mobiles">Mobiles</option>
+	    <option value="Books">Books</option>
+	    <option value="Mobile protection">Mobile protection</option>
+	    <option value="Clothing">Clothing</option>
+	  </select>
+	  <input type="text" name="displayValue" id="displayValue" 
+	         placeholder="add/select a value" onfocus="this.select()"  >
+	  <input name="idValue" id="idValue" type="hidden"></span>
+    </section>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
