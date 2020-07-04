@@ -299,21 +299,21 @@
   .amazonborder{
     padding-bottom: 5px;
   }
-  /*#amazonborder:hover{
+  #amazonborder:hover{
     border: 0px;
-  }*/
+  }
   #navbar{
     padding-left: 3px;
   }
   #hiddencol,#hiddencol1{
     border: 0px;
   }
-  .dropdown,.displayValue{
+/*  .dropdown,.displayValue{
     margin-left: 15px;
   }
   #magni,#navbar{
     margin-left: 8px;
-  }
+  }*/
   #sbutton{
     top: 0px;
   }
