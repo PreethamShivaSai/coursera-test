@@ -10,12 +10,37 @@
 </head>
 <body>
   <div class="row">
-    <div id="main" class="col-lg-2 col-md-2">
-      <div class="col-lg-3 col-md-3" id="navbar">
+    <div id="main" class="col-lg-2 col-md-2 col-sm-12">
+      <div class="col-lg-3 col-md-3 col-sm-05" id="navbar">
         <a href="https://www.amazon.in/" style="text-decoration: none;" class="navibuttonlink" style="text-align: center;">=</a>
       </div>
-      <div class="col-lg-9 col-md-9" id="amazonborder">
+      <div class="col-lg-9 col-md-9 col-sm-2" id="amazonborder">
         <a href="index1.html"><img  class="amazonlogo" src="main.png"></a>
+      </div>
+      <div class="col-sm-7" id="hiddencol"></div>
+      <div class="col-sm-05" id="hiddencol1"></div>
+      <div class="hidden-lg hidden-md col-sm-1" id="sbutton">
+          <button class="signin">
+            <span style="font-size: 12px;color: lightgrey">
+              Hello!
+            </span>
+            <br>
+            <span style="font-size: 14px;">
+              Sign in
+            </span>
+          </button>
+      </div>
+
+      <div class="hidden-lg hidden-md col-sm-1" style="padding-left: 0px;padding-right: 0px;padding-bottom: 1px;padding-top: 2px; border: 0px;position: 2;top: 2px">
+          <button class="orders">
+            <span style="font-size: 12px;color: lightgrey">
+              Orders
+            </span>
+            <br>
+            <span style="font-size: 16px;color: white;">
+              &returns
+            </span>
+          </button>
       </div>
      <!--  <div class="col-lg-2" style="border: 0px;">
         <select class="dropdown" 
@@ -29,8 +54,8 @@
     </select>
       </div> -->
     </div>
-    <div class="col-lg-8 col-md-8" style="padding-left: 0px;padding-right: 0px; position: relative;top: 3px ;border: 0px;">
-      <div class="col-lg-1 col-md-1" style="height: 52.175px;left: -15px;padding-right: 0px;padding-left: 0px;position: relative;left: 10px;border: 0px;">
+    <div class="col-lg-8 col-md-8 col-sm-12" style="padding-left: 0px;padding-right: 0px; position: relative;top: 3px ;border: 0px;">
+      <div class="col-lg-1 col-md-1 col-sm-1" style="height: 52.175px;left: -15px;padding-right: 0px;padding-left: 0px;position: relative;left: 10px;border: 0px;">
         <select class="dropdown" 
           onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
       <option></option>
@@ -41,17 +66,17 @@
       <option value="Clothing">Clothing</option>
     </select>
       </div>
-        <div class="col-lg-10 col-md-10" style="padding-left: 0px;padding-right: 0px;border: 0px;">
+        <div class="col-lg-10 col-md-10 col-sm-10" style="padding-left: 0px;padding-right: 0px;border: 0px;">
           <input type="text" name="displayValue" class="displayValue" 
                placeholder="add/select a value" onfocus="this.select()"  >
         <input name="idValue" id="idValue" type="hidden"></span>
         </div>
-        <div class="col-lg-1 col-md-1" style="margin-top: 0px;margin-bottom: 0px;padding-right: 0px;padding-left: 0px;position: relative;top: 5px;border: 0px">
+        <div class="col-lg-1 col-md-1 col-sm-1" id="magni" style="margin-top: 0px;margin-bottom: 0px;padding-right: 0px;padding-left: 0px;position: relative;top: 5px;border: 0px">
           <button class="searchbutton"><img src="mag.png" style="width: 100%;"></button>
         </div>
     </div>
-    <div class="col-lg-2 col-md-2" style="padding-left: 0px; padding-right: 0px;position: relative;top: 7px; border: 0px;">
-      <div class="col-lg-6 col-md-6" id="sbutton">
+    <div class="col-lg-2 col-md-2 col-sm-2" style="padding-left: 0px; padding-right: 0px;position: relative;top: 7px; border: 0px;">
+      <div class="col-lg-6 hidden-md hidden-sm" id="sbutton">
           <button class="signin">
             <span style="font-size: 12px;color: lightgrey">
               Hello,Sign in
@@ -62,7 +87,18 @@
             </span>
           </button>
       </div>
-      <div class="col-lg-6 col-md-6" style="padding-left: 0px;padding-right: 0px;padding-bottom: 1px;padding-top: 2px; border: 0px;">
+            <div class="hidden-lg col-md-6 hidden-sm" id="sbutton">
+          <button class="signin">
+            <span style="font-size: 12px;color: lightgrey">
+              Hello,Sign in
+            </span>
+            <br>
+            <span style="font-size: 14px;">
+              Accounts
+            </span>
+          </button>
+      </div>
+      <div class="col-lg-6 col-md-6 hidden-sm" style="padding-left: 0px;padding-right: 0px;padding-bottom: 1px;padding-top: 2px; border: 0px;">
           <button class="orders">
             <span style="font-size: 12px;color: lightgrey">
               Orders

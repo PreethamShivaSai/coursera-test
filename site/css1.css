@@ -97,6 +97,57 @@
     width: 100%;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-sm-0, .col-sm-05, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-105, .col-sm-11, .col-sm-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-sm-0{
+    width: 0%;
+  }
+  .col-sm-05{
+    width: 4%;
+  }
+  .col-sm-1 {
+    width: 8%;
+  }
+  .col-sm-2 {
+    width: 16%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33%;
+  }
+  .col-sm-5 {
+    width: 41%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58%;
+  }
+  .col-sm-8 {
+    width: 66%;
+  }
+  .col-sm-9 {
+    width: 74%;
+  }
+  .col-sm-10 {
+    width: 83%;
+  }
+  .cosmsm-105{
+    width: 87.5%
+  }
+  .col-sm-11 {
+    width: 91%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
 .row{
   height: 60px;
   background: black;
@@ -126,7 +177,7 @@
   padding-top: 0px;
   padding-bottom: 0px;
   padding-right: 0px;
-  padding-left: 18px;
+  padding-left: 7%;
   opacity: 70%
 }
 #navbar:hover{
@@ -234,6 +285,40 @@
     margin-top: 10px;
   }
   div#navbar{
-    padding-left: 7px;
+    padding-left: 5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .row{
+    height: 110px;
+  }
+  .amazonlogo{
+    margin-top: 7px;
+    width: 100px;
+  }
+  .amazonborder{
+    padding-bottom: 5px;
+  }
+  /*#amazonborder:hover{
+    border: 0px;
+  }*/
+  #navbar{
+    padding-left: 3px;
+  }
+  #hiddencol,#hiddencol1{
+    border: 0px;
+  }
+  .dropdown,.displayValue{
+    margin-left: 15px;
+  }
+  #magni,#navbar{
+    margin-left: 8px;
+  }
+  #sbutton{
+    top: 0px;
+  }
+  #navbar{
+    padding-left: 0.7%;
+    padding-right: 0px;
   }
 }
