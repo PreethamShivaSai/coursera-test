@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css.css">
   </head>
-<body class="body">
-  <div class="row" style="background-color: #e6f2ff">
+<body class="body" style="background-color: #e6e6e6">
+  <div class="row" id="row" style="background-color: #e6f2ff">
 
     <!-- <div class="col-lg-05" style="border: 0px;">
       
@@ -31,7 +31,7 @@
         <img src="cart1.png" class="cart">
         <span>Cart</span>
       </button>
-      <button class="acbutton" style="float: right;" >
+      <button class="acbutton" style="float: right;" onclick="alert('hi')">
         <img src="account1.png" class="account">
         <span>Sign in</span>
      </button>
@@ -64,15 +64,65 @@
         <img src="cart1.png" class="cart">
         <span>Cart</span>
       </button>
-      <button class="acbutton" style="float: right;" >
+      <button class="acbutton" style="float: right;" onclick="myFunction()">
         <img src="account1.png" class="account">
         <span>Sign in</span>
      </button>
    </div>
   </div>
-  
+    <section class="row"> 
+      <br>
+      <div class="halfbar" >
+        
+      </div>
+      <br>
+      <div class="col-lg-4 col-md-4 col-sm-6" style="border: 0px;">
+        <div id="block1">
+          <div>
+            <div class="col-lg-5" style="height: 160px;">
+              
+            </div>
+            <div class="col-lg-5" style="margin-left: auto;margin-right: auto;height: 160px;">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6" style="border: 0px;">
+        <div id="block2">
+          
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 hidden-sm" style="border: 0px;">
+        <div id="block3">
+          
+        </div>
+        <br>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6" style="border: 0px;">
+        <div id="block1">
+          
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6" style="border: 0px;">
+        <div id="block2">
+          
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 hidden-sm" style="border: 0px;">
+        <div id="block3">
+          
+        </div>
+        <br>
+      </div>
+    </section>
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script type="text/javascript">
+    function myFunction(){
+      window.open("login.html","_self");
+    }
+  </script>
 </body>
 </html>

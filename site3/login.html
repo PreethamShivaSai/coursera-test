@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apss login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<div class="col-lg-4" style="border: 0px;">
+	</div>
+	<div class="col-lg-4" style="border: 0px;">
+		<div class="login">
+			<section id="rw">
+				<span class="createac">
+					Create Account
+				</span>
+			</section>
+			<br>
+			<span class="fname">
+					<input id="fname" type="text" name="text" class="fntf" placeholder="First name">
+			</span>
+			<br>
+			<span class="lname">
+					<input id="lname" type="text" name="text" class="lntf" placeholder="Last name">
+			</span>
+			<br>
+			<span class="email">
+					<input id="email" type="text" name="text" class="etf" placeholder="Email">
+			</span>
+			<br>
+			<span class="phone">
+				<input id="phone" type="number" name="text" class="ptf" placeholder="Phone number" size="10" maxlength="20">
+			</span>
+			<br>
+			<section>
+				<span class="or">
+					Or login with
+				</span>
+			</section>
+			<br>
+			<button class="google">
+				<img style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png">&nbsp;&nbsp;&nbsp;Google
+			</button>
+			<br>
+			<span id="war">
+				
+			</span>
+			<br>
+			<br>
+
+			<button class="acex">
+				Sign in
+			</button>
+			<button class="next" id="next" onclick="next()">
+				Next
+			</button>
+		</div>
+	</div>
+	<div class="col-lg-4" style="border: 0px;">
+	</div>
+	<script type="text/javascript">
+		function next(){
+			var fname=document.getElementById('fname').value;
+			var flen=fname.length;
+			var lname=document.getElementById('lname').value;
+			var llen=lname.length;
+			var email=document.getElementById('email').value;
+			var elen=email.length;
+			var phone=document.getElementById('phone').value;
+			var plen=phone.length;
+			if(flen==0||llen==0||elen==0||plen==0)
+			{
+				document.getElementById('war').innerHTML="Every field should be filled"
+			}
+			else
+			{
+				document.getElementById('war').innerHTML=""
+				window.open("loginnext.html","_self");
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apss login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<div class="col-lg-4" style="border: 0px;">
+		
+	</div>
+	<div class="col-lg-4" style="border: 0px;">
+		<br>
+		<br>
+		<br>
+		<div class="password">
+			<section id="rw">
+				<span class="createac">
+					Create password
+				</span>
+			</section>
+			<br>
+			<input type="password" name="password" placeholder="Password" class="pwd" id="pwd">
+			<br>
+			<br>
+			<input type="password" name="cpassword" placeholder="Confirm password" class="cpwd" id="cpwd">
+
+			<br>
+			<br>
+			<span id="warning">
+				
+			</span>
+			<br>
+			<br>
+			<button class="submit" id="submit" onclick="submit()">
+				Submit
+			</button>
+		</div>
+	</div>
+	<div class="col-lg-4" style="border: 0px;">
+		
+	</div>
+	<script type="text/javascript">
+		function submit(){
+			var pass=document.getElementById('pwd').value;
+			var cpass=document.getElementById('cpwd').value;
+			var n=pass.length;
+			var a=0;
+			var up=0,low=0;
+			for(var i=0;i<n;i++)
+			{
+				console.log(pass[i]);
+				console.log(a+" "+up+" "+low)
+				if(pass[i]==pass[i].toUpperCase())
+				{
+					up++;
+				}
+				if(pass[i]==pass[i].toLowerCase())
+				{
+					low++;
+				}
+				if(!isNaN(pass[i]))
+				{
+					a++;
+				}
+			}
+			if(pass==cpass)
+			{
+				if(pass.length<5||pass.length>15)
+				{
+					document.getElementById('pwd').style.borderColor="red";
+					document.getElementById('cpwd').style.borderColor="red";
+					document.getElementById('warning').innerHTML="Password should contain 5-15 characters";
+				}
+				else
+				{
+					// if(a==0)
+					// {
+					// 	document.getElementById('pwd').style.borderColor="red";
+					// 	document.getElementById('cpwd').style.borderColor="red";
+					// 	document.getElementById('warning').innerHTML="Password should contain alteast one number";
+					// }
+					if(up==0||low==0||a==0)
+					{
+						document.getElementById('pwd').style.borderColor="red";
+						document.getElementById('cpwd').style.borderColor="red";
+						document.getElementById('warning').innerHTML="Password should contain alteast one upper and lower case alphabets and number";
+					}
+					else
+					{
+						document.getElementById('cpwd').style.borderColor="#66c2ff";
+						document.getElementById('pwd').style.borderColor="#66c2ff";
+						document.getElementById('warning').innerHTML="";
+					}
+				}
+			}
+			else
+			{
+				document.getElementById('cpwd').style.borderColor="red";
+				document.getElementById('warning').innerHTML="Password doesnot match";
+			}
+		}
+	</script>
+</body>
+</html>
