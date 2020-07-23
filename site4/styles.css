@@ -433,6 +433,37 @@ h4{
 		width: 100%;
 	}
 	#btn{
+		width: 100px;
 		position: absolute;
+	}
+	.btn{
+		font-size: 7px;
+	}
+	#mi{
+		top: 48px;
+	}
+	#row1{
+		height: 320px;
+	}
+	.col-3{
+		padding-top: 0;
+		padding-bottom: 0; 
+	}
+	#col-3{
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+	.catt{
+		position: relative;
+		top: 0;
+		bottom: 0;
+		margin-bottom: 20px;
+	}
+	.fet{
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.col-3{
+		flex-basis: 50%;
 	}
 }
