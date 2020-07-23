@@ -418,6 +418,12 @@ h4{
 	h1, h2{
 		display: none;
 	}
+	h4{
+		font-size: 15px;
+	}
+	a p{
+		font-size: 18px;
+	}
 	#hide{
 		position: relative;
 		left: 0;
@@ -427,6 +433,7 @@ h4{
 	.col-4-1{
 		flex-basis: 100%;
 		width: 70%;
+		transition: transform .5s;
 	}
 	.im1{
 		margin: auto;
@@ -465,5 +472,8 @@ h4{
 	}
 	.col-3{
 		flex-basis: 50%;
+	}
+	.col-4-1:hover{
+		transform: translateY(-7px);
 	}
 }
