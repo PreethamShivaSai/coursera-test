@@ -2,11 +2,12 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	outline: 2px solid red;
+	/*outline: 2px solid red;*/
 }
 .navbar{
 	display: flex;
 	align-items: center;
+	height: 70px
 	padding: 20px;
 }
 nav{
@@ -405,6 +406,9 @@ h4{
 		margin-right: 65px;
 		margin-top: 10px; 
 	}
+	div.navbar{
+		height: 50px;
+	}
 	.apss1{
 		display: inline-block;
 	}
@@ -427,5 +431,8 @@ h4{
 	.im1{
 		margin: auto;
 		width: 100%;
+	}
+	#btn{
+		position: absolute;
 	}
 }
