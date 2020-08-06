@@ -9,7 +9,7 @@ h1 {
 
 body {
 	
-	background-color: #990012;
+	background-color: lightblue;
 
 }
 
@@ -29,7 +29,7 @@ p {
 
 section {
 	border:	1px solid black;
-	background-color:#C24641;
+	background-color:white;
 	width: 100%;
 	height: auto;
 	font-family: Helvetica;
@@ -49,8 +49,8 @@ section {
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 5px;
-	background-color: black;
-	color: #FFFF00;
+	background-color: lightgrey;
+	color: black;
 }
 
 #biryani {
@@ -64,8 +64,8 @@ section {
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 5px;
-	background-color: black;
-	color: #FFFF00;
+	background-color: lightgrey;
+	color: black;
 }
 
 #chingri {
@@ -78,8 +78,8 @@ section {
 	font-size: 125%;
 	margin-bottom: 0;
 	margin-top: 0;
-	background-color: black;
-	color: #FFFF00;
+	background-color: lightgrey;
+	color: black;
 	padding: 5px;
 }
 
