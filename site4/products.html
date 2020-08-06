@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>apss</title>
+	<meta http-equiv="Content-type" content="text/plain; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Yesteryear&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Allura&family=Satisfy&family=Yesteryear&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="Container" id="navibar">
+		<div class="navbar stack-top">
+			<div class="logo">
+				<a href="index.html"><img src="apsslogo.png" width="135px"></a>
+			</div>
+			<nav id="n1">
+				<ul id="mi">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Account</a></li>
+				</ul>
+			</nav>
+			<a href=""><img src="cart.png" style="width: 30px;"></a>
+			<button style="border: 0;padding: 0;margin: 0;background: transparent;outline: 0;" onclick="toggle()"><img class="menu" src="mic.png"></button>
+		</div>
+	</div>
+	<div class="big-container">
+		<div class="productbar" style="align-items: center;">
+			<div id="n2">
+				<ul id="mi1">
+					<li class="l"><button class="b" onclick="func(0)">Electronics</button></li>
+					<li class="l"><button class="b" onclick="func(1)">Clothing</button></li>
+					<li class="l"><button class="b" onclick="func(2)">Books</button></li>
+					<li class="l"><button class="b" onclick="func(3)">Home Decor</button></li>
+				</ul>
+			</div>
+		</div>
+		<div class="Product">
+			Electronics
+		</div>
+		<div class="Product">
+			<div class="apss" id="container1" align="center">
+		<div class="fet" >
+			Featured Produts
+		</div>
+		<div class="row" id="hi" style="left: 0;right: 0px;">
+			
+		</div>
+	</div>
+		</div>
+		<div class="Product">
+			Books
+		</div>
+		<div class="Product">
+			Home decor
+		</div>
+	</div>
+	
+	
+	<br>
+	<hr style="height: 5px; border-radius: 5px; background: grey;outline: none;">
+	<div class="Container" id="cont1">
+		<div class="footer">
+			<div class="col1">
+				<p class="app">Download our Mobile App</p>
+				<div align="center">
+					<a href="" >
+						<img class="gplay" src="gplay.png" style="width: 150px">
+					</a>
+					<a href="">
+						<img class="appstr" src="appstr.png" style="width: 150px;">
+					</a>
+				</div>
+			</div>
+		</div>
+		<p style="color: white; text-align: center; font-size: 100%;">
+			Contact:apssstore@gmail.com<br><br>
+		</p>
+		<hr style="width: 50%; height: 5px; border-radius: 5px; background: white;transform: translateX(50%);" align="center">
+		<p style="text-align: center; color: white; font-size: 80%;">
+			<br>
+			&copy:Aitha Preetham Shiva Sai
+		</p>
+	</div>
+</body>
+<script type="text/javascript">
+	var pro=document.getElementsByClassName('Product');
+	pro[0].scrollIntoView(); 
+	func(1);
+	function func(show){
+		for(var i=0;i<pro.length;i++)
+		{
+			pro[i].style.display="none";
+		}
+		pro[show].style.display="block";
+	}
+</script>
+<script type="text/javascript">
+		var mi=document.getElementById("mi");
+		mi.style.height="0px";
+		function toggle(){
+			console.log('inside function');
+			if(document.getElementById("mi").style.height=="0px")
+			{
+				console.log('true');
+				document.getElementById("mi").style.height="200px";
+				// document.getElementById("quotes").style.visibility="hidden";
+				// document.getElementById("quotes1").style.visibility="hidden";
+				// document.getElementById("btn").style.transform="translateY(550%)";
+				console.log('bye');
+			}
+			else
+			{
+				console.log('false');
+				document.getElementById("mi").style.height="0px";
+				// document.getElementById("quotes").style.visibility="visible";
+				// document.getElementById("quotes1").style.visibility="visible";
+				// document.getElementById("btn").style.transform="translateY(-200%)";
+			}
+		}
+	</script>
+</html>
+<!-- <div class="big-container">
+		<div class="productbar" style="text-align: center;">
+			<nav id="n2">
+				<ul id="mi">
+					<li><button class="b" onclick="func(0)">Electronics</button></li>
+					<li><button class="b" onclick="func(1)">Clothing</button></li>
+					<li><button class="b" onclick="func(2)">Books</button></li>
+					<li><button class="b" onclick="func(3)">Home Decor</button></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="Product">
+			Electronics
+		</div>
+		<div class="Product">
+			Clothing
+		</div>
+		<div class="Product">
+			Books
+		</div>
+		<div class="Product">
+			Home decor
+		</div>
+	</div> -->

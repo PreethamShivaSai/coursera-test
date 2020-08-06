@@ -1,0 +1,42 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	/*outline: 2px solid red;*/
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	height: 70px
+	padding: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none; /*to remove bullet dots*/
+}
+nav ul li{
+	border-bottom: 2px solid;
+	border-color: transparent;
+	display: inline-block;
+	margin-right: 20px;
+	border-radius: 5px;
+	transition: transform .3s;
+}
+a{
+	text-decoration: none;
+	color: grey;
+	font-size: 20px;
+}
+p{
+	color: grey;
+}
+.Container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px; 
+}

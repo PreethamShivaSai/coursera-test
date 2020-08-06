@@ -1,0 +1,9 @@
+.asd{
+	display: flex;
+}
+.col-2{
+	flex-basis: 50%;
+}
+.col-2_1{
+	padding: 10px;
+}
